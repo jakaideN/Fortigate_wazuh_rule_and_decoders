@@ -1,0 +1,17 @@
+<!-- Local rules -->
+
+<!-- Modify it at your will. -->
+<!-- Copyright (C) 2015-2020, Wazuh Inc. -->
+
+<!-- Example -->
+<group name="local,syslog,forti,fortigate">
+
+  <!--
+  Dec 10 01:02:02 host sshd[1234]: Failed none for root from 1.1.1.1 port 1066 ssh2
+  -->
+    <rule id="222000" level="2">
+        <decoded_as>fortigate-custom</decoded_as>
+        <description>Fortigate messages grouped.</description>
+    </rule>
+
+</group>
